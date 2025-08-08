@@ -55,7 +55,7 @@ export default function ReceituarioGenerator() {
     data: new Date().toISOString().split('T')[0]
   })
 
-  const [showPreview, setShowPreview] = useState(true)
+  const [showPreview, setShowPreview] = useState(false)
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false)
   const previewRef = useRef<HTMLDivElement>(null)
 
@@ -365,7 +365,7 @@ export default function ReceituarioGenerator() {
                   <Button
                     onClick={() => setShowPreview(!showPreview)}
                     variant="outline"
-                    className="flex-1 border-green-600 text-green-700 hover:bg-green-50 hidden md:flex"
+                    className="flex-1 border-green-600 text-green-700 hover:bg-green-50"
                   >
                     <Eye className="h-4 w-4 mr-2" />
                     {showPreview ? "Ocultar" : "Visualizar"} Preview
@@ -385,7 +385,7 @@ export default function ReceituarioGenerator() {
 
           {/* Preview */}
           {showPreview && (
-            <div className="lg:sticky lg:top-8 hidden md:flex">
+            <div className="lg:sticky lg:top-8">
               <ReceituarioPreview ref={previewRef} data={formData} />
             </div>
           )}
