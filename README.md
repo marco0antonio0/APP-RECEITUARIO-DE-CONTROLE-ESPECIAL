@@ -1,6 +1,6 @@
 # 🐾 Receituário de Controle Especial Veterinário
 
-Sistema web gratuito e responsivo para geração de receituários de controle especial em PDF. Ideal para médicas e médicos veterinários que precisam emitir receitas com formatação oficial, válida para uso em farmácias e drogarias.
+Sistema web gratuito e responsivo para geração de receituários de controle especial em PDF. Ideal para médicas e médicos veterinários que precisam emitir receitas com formatação especificas.
 
 ---
 
